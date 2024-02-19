@@ -11,28 +11,28 @@
 <body>
 
     <div class="container">
-        <header id="header" class="header">
-        <img src="https://sun9-80.userapi.com/impg/e4Dthlj3plVh3mTImsmZmXjE5_SlXmztkKuc1g/cPHReisQXus.jpg?size=1620x2160&quality=95&sign=c01c4d676503ba67d42eba7794c2a276&type=album"  alt="Моё фото" class="foto">
-        </header>
-
-        <section  id="Block1" class="For me">
-            <h1><strong>Владимир Шиканов</strong></h1>
-            <p>Я студен <Strong>МГТУ им. Баумана</Strong> обучаюсь на <em>3 курсе 6 семестра</em> по направлению <strong><em><a href="http://ibm6.bmstu.ru/bi" target="_blank">Бизнес-информатика.</a></em></strong></p>
-            <p>Я люблю <em>монтировать видео, программировать и решать задачи по CRM системам</em> </p>
+        
+        <section  id="Block1" class="Forme">
+            <img src="https://sun9-72.userapi.com/impg/DpYRxK2NG2MTQCtXbRTirnaYFY3R0JpVk0hWvA/fF4uJLcNQzM.jpg?size=1620x2160&quality=95&sign=08a7d80c46faa65572e5b444868329e6&type=album"  alt="Моё фото" class="foto">
+            <div>
+                <h1><strong>Владимир Шиканов</strong></h1>
+                <p>Я студен <Strong>МГТУ им. Баумана</Strong> обучаюсь на <em>3 курсе 6 семестра</em> по направлению <strong><em><a href="http://ibm6.bmstu.ru/bi" target="_blank">Бизнес-информатика.</a></em></strong></p>
+                <p>Я люблю <em>монтировать видео, программировать и решать задачи по CRM системам</em> </p>
+            </div>
         </section>      
 
         <section  id="Block2" class="spisok">
             <h2 ><strong>Мои хобби:</strong></h2>
-            <ol>
+            <ol class="list">
                 <li>Волейбол</li>
                 <li>ММА</li>
                 <li>Киберспорт по Валорант</li>
             </ol>
         </section>
 
-        <section  id="Block3" class="table">
+        <section  id="Block3" >
             <h2><strong>Опыт работы:</strong></h2>
-            <table border="1" width="400" >
+            <table  width="400" class="table">
                 <thead>
                     <tr>
                         <th>Название</th>
@@ -42,17 +42,17 @@
                 </thead>
                     <tr>
                         <td>Нара-Ритуал</td>
-                        <td>Носильщик</td>
+                        <td>Грузчик</td>
                         <td>2020-2023</td>
                     </tr>
                     <tr>
                         <td>Премиум ламинат</td>
-                        <td>Забивака</td>
+                        <td>Админситартор сайта</td>
                         <td>2021-2022</td>
                     </tr>
                     <tr>
                         <td>Строй 777</td>
-                        <td>Забивака</td>
+                        <td>Админситартор сайта</td>
                         <td>2023-2024</td>
                     </tr>
             </table>
@@ -61,8 +61,10 @@
         
         <nav id="navigation" class="silki">
             <h2> <strong>Список социальных сетей:</strong></h2>
-            <p><a href="https://vk.com/vlafe4" target="_blank"> <img src="https://mp-cosmetics.ru/userfiles/323D17E9-E417-47EC-A1C7-73A6E6156A21.png" width="90" alt=" Ссылка на вк">  </a>
-                <a href="http://t.me/Vlafe4" target="_blank"><img src="https://static10.tgstat.ru/channels/_0/ab/abd727041c2b621a69e0cfd7a07ca6c5.jpg" width="90" alt="Ссылка на тг"></a></p>
+            <ol>
+                <li> <a href="https://vk.com/vlafe4" target="_blank"> <img src="https://mp-cosmetics.ru/userfiles/323D17E9-E417-47EC-A1C7-73A6E6156A21.png" width="90" alt=" Ссылка на вк">  </a> </li>
+                <li> <a href="http://t.me/Vlafe4" target="_blank"><img src="https://static10.tgstat.ru/channels/_0/ab/abd727041c2b621a69e0cfd7a07ca6c5.jpg" width="90" alt="Ссылка на тг"></a> </li>
+            </ol>
         </nav>
 
         <hr size="3" color="black" noshade="10">
@@ -70,17 +72,19 @@
         <footer id="footer" class="form">
             <h2><strong>Связаться со мной</strong></h2>
             <form >
-                <div> 
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" placeholder="Введите ваше имя">
+                <div class="formrow">
+                    <div class="formcomp"> 
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="formcomp">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Ваш email</label>
-                    <input type="email" id="email" placeholder="Введите ваш imail">
-                </div>
-                <div>
-                    <label for="mes">Ваше сообщение</label>
-                    <textarea name="mess" cols="20" rows="3" placeholder="Введитеваше сообщение"></textarea>
+                <div class="formcomp">
+                    <label for="mes">Ваше сообщение:</label>
+                    <textarea name="mess" cols="20" rows="2" placeholder="Введите ваше сообщение"></textarea>
                 </div>
                 
                 <button type="submit" class="btn">Отправить</button>
